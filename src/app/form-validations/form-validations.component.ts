@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { Client } from '../client';
 
 @Component({
   selector: 'app-form-validations',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FormValidationsComponent implements OnInit {
 
+  @Input() client: Client;
+  @Input() display: boolean;
+
   constructor() { }
 
   ngOnInit(): void {
+    this.display = false;
   }
 
 }

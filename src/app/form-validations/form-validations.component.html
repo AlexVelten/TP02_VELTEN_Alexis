@@ -1,1 +1,14 @@
-<p>form-validations works!</p>
+<div *ngIf="display" class="container">
+    <h2>Récapitulatif des données :</h2>
+    <p>Civilité : {{client.civilite}}</p>
+    <p>Nom : {{client.nom}}</p>
+    <p>Prenom : {{client.nom}}</p>
+    <p>Adresse : {{client.adresse}}</p>
+    <p>Ville : {{client.ville}}</p>
+    <p>Telephone : {{client.telephone}}</p>
+    <p>Pays : {{client.pays}}</p>
+    <p>Code postale : {{client.code_postale}}</p>
+    <p>Email : {{client.email}}</p>
+    <p>Login : {{client.login}}</p>
+    <p>Mot de passe : {{client.password}}</p>
+</div>
