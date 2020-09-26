@@ -36,3 +36,8 @@
 .mt-6{
   margin-top: 4rem !important;
 }
+
+button:disabled {
+  cursor: not-allowed;
+  pointer-events: all !important;
+}
